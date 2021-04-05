@@ -1,0 +1,10 @@
+Installation of Ansible in Ubuntu/Debian systems
+
+apt-get update
+apt install software-properties-common
+apt-add-repository ppa:ansible/ansible
+apt install ansible
+
+Installation of Ansible on RHEL
+
+yum install ansible -y
