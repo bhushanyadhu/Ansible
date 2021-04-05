@@ -1,0 +1,25 @@
+Whule connecting to the remote machine from ansible server, if u got below authenticarion issues then follow below mentioned steps to reslove the isse
+
+Permission denied(Public key & pasword)
+
+Login to the remote machine
+
+vi /etc/ssh/sshd_config
+
+change PasswordAuthentication to yes
+ChallengeResponseAuthentication to  no
+PermitRootLogin to no
+PubkeyAuthentication to yes
+
+Comment below lines
+
+#GSSAPIAuthentication yes
+#GSSAPICleanupCredentials no
+
+chanhge UsePAM to yes
+
+Make sure /home/your_home/.ssh have 700 and authorized_keys have 600 permisions
+
+Restart sshd service
+
+service sshd restart
