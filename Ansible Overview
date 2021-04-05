@@ -1,0 +1,12 @@
+What is Ansible:
+
+Ansible is an open source automation and orchestration tool for software provisioning, configuration management, and software deployment. 
+Ansible can easily run and configure Unix-like systems as well as Windows systems to provide infrastructure as code.
+Ansible is popular for its simplicity of installation, ease of use
+It functions by connecting via SSH to the clients, so it doesn't need a special agent on the client-side, and by pushing modules to the clients, the modules are then executed locally on the client-side and the output is pushed back to the Ansible server.
+
+
+Since it uses SSH, it can very easily connect to clients using SSH-Keys, simplifying though the whole process. Client details, like hostnames or IP addresses and SSH ports, are stored in files called inventory files. Once you have created an inventory file and populated it, ansible can use it.
+
+Why use Ansible:
+
